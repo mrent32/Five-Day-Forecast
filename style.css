@@ -1,0 +1,30 @@
+header {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right, rgb(40, 40, 245), rgb(25, 25, 158));
+}
+header h1 {
+   text-align: center;
+   color:white;
+   padding-top: 30px;
+}
+form {
+    margin-bottom:20px;
+    width: 250px;
+}
+aside {
+    padding-left: 20px;
+}
+button {
+    width: 159px;
+}
+.suggested-cities {
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 159px;
+    text-align: center;
+    margin-top: 5px;
+    background-color: blue;
+    color: white;
+}
