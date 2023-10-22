@@ -28,3 +28,16 @@ button {
     background-color: blue;
     color: white;
 }
+#top {
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+}
+#current-city {
+    border: 2px solid black;
+    width: 700px;
+}
+#current-city h2 {
+    padding-left: 50px;
+    
+}
