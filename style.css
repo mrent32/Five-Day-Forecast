@@ -30,14 +30,33 @@ button {
 }
 #top {
     display: flex;
+    flex-direction: row;
     margin-top: 50px;
     width: 100%;
 }
 #current-city {
     border: 2px solid black;
     width: 700px;
+    height: 300px;
 }
 #current-city h2 {
     padding-left: 50px;
-    
+}
+.card {
+    border: 1px solid black;
+    background-color: grey;
+    height: 175px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+}
+#middle {
+    display: flex;
+    flex-direction: column;
+}
+#five-day {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
 }
