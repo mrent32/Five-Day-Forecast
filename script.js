@@ -10,7 +10,7 @@ let seattle = document.getElementById('seattle')
 
 
 function getGeo(city) {
-    let geoCode = 'http://api.openweathermap.org/geo/1.0/direct?q='+city+'&limit=5&appid=2effc000f4251d05ffc2fed2de56922d'
+    let geoCode = 'https://api.openweathermap.org/geo/1.0/direct?q='+city+'&limit=5&appid=2effc000f4251d05ffc2fed2de56922d'
     fetch(geoCode)
     .then(function (response) {
         return response.json()
