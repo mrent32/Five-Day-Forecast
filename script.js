@@ -122,7 +122,7 @@ searchForm.addEventListener('submit', function(event){
 })
 elpaso.addEventListener('click', function(event) {
     let cityName = document.getElementById('elpaso').value
-    let geoCode = 'http://api.openweathermap.org/geo/1.0/direct?q='+elpaso+'&limit=5&appid=2effc000f4251d05ffc2fed2de56922d'
+    let geoCode = 'https://api.openweathermap.org/geo/1.0/direct?q='+elpaso+'&limit=5&appid=2effc000f4251d05ffc2fed2de56922d'
     console.log(cityName)
     getGeo(geoCode)
 })
