@@ -1,12 +1,13 @@
 let apiResponse = document.getElementById('current-city')
 let searchForm = document.getElementById('search-form')
 let elpaso = document.getElementById('elpaso')
-let atlanta = document.getElementById('atlanta')
+let austin = document.getElementById('austin')
 let denver = document.getElementById('denver')
 let dallas = document.getElementById('dallas')
 let newyork = document.getElementById('newyork')
 let charlotte= document.getElementById('charlotte')
 let seattle = document.getElementById('seattle')
+let anchorage= document.getElementById('anchorage')
 
 
 function getGeo(city) {
@@ -101,7 +102,7 @@ function getFive(city, lat, lon) {
         forecast4.append(four)
         forecast4.append(temp4)
         forecast4.append(wind4)
-        let five = document.createElement('h3').textContent = data.list[23].dt_txt
+        let five = document.createElement('h3').textContent = data.list[31].dt_txt
         let temp5 = document.createElement('li').textContent = 'Temperature' + data.list[31].main.temp
         let wind5 = document.createElement('li').textContent = 'Wind' + data.list[31].wind.speed
         forecast5.append(five)
@@ -120,10 +121,47 @@ searchForm.addEventListener('submit', function(event){
     console.log(cityName)
     getGeo(cityName)
 })
-elpaso.addEventListener('click', function(event) {
-    let cityName = document.getElementById('elpaso').value
-    let geoCode = 'https://api.openweathermap.org/geo/1.0/direct?q='+elpaso+'&limit=5&appid=2effc000f4251d05ffc2fed2de56922d'
-    console.log(cityName)
-    getGeo(geoCode)
-})
+elpaso.addEventListener('click', function(data) {
+    let place = document.getElementById('elpaso').value
+    let link = 'https://api.openweathermap.org/geo/1.0/direct?q='+elpaso+'&limit=5&appid=2effc000f4251d05ffc2fed2de56922d'
+    getGeo('el paso')   
+    })
 
+austin.addEventListener('click', function() {
+    let place = document.getElementById('austin').value
+    let link = 'https://api.openweathermap.org/geo/1.0/direct?q='+austin+'&limit=5&appid=2effc000f4251d05ffc2fed2de56922d'
+    getGeo('austin')    
+    })
+
+denver.addEventListener('click', function() {
+        let place = document.getElementById('denver').value
+        let link = 'https://api.openweathermap.org/geo/1.0/direct?q='+denver+'limit=5&appid=2effc000f4251d05ffc2fed2de56922d'
+        getGeo('denver')    
+        })
+
+dallas.addEventListener('click', function() {
+            let place = document.getElementById('dallas').value
+            let link = 'https://api.openweathermap.org/geo/1.0/direct?q='+dallas+'&limit=5&appid=2effc000f4251d05ffc2fed2de56922d'
+            getGeo('dallas')    
+            })
+
+newyork.addEventListener('click', function() {
+    let place = document.getElementById('newyork').value
+    let link = 'https://api.openweathermap.org/geo/1.0/direct?q='+newyork+'&limit=5&appid=2effc000f4251d05ffc2fed2de56922d'
+    getGeo('newyork')    
+    })
+charlotte.addEventListener('click', function() {
+        let place = document.getElementById('charlotte').value
+        let link = 'https://api.openweathermap.org/geo/1.0/direct?q='+charlotte+'&limit=5&appid=2effc000f4251d05ffc2fed2de56922d'
+        getGeo('charlotte')    
+        })
+seattle.addEventListener('click', function() {
+            let place = document.getElementById('seattle').value
+            let link = 'https://api.openweathermap.org/geo/1.0/direct?q='+seattle+'&limit=5&appid=2effc000f4251d05ffc2fed2de56922d'
+            getGeo('seattle')    
+            })
+anchorage.addEventListener('click', function() {
+         let place = document.getElementById('anchorage').value
+         let link = 'https://api.openweathermap.org/geo/1.0/direct?q='+anchorage+'&limit=5&appid=2effc000f4251d05ffc2fed2de56922d'
+         getGeo('anchorage')    
+            })
